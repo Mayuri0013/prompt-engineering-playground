@@ -52,8 +52,7 @@ prompt-engineering-playground/
 │
 ├── backend/
 │   ├── main.py
-│   ├── requirements.txt
-│   └── .env
+│   └── requirements.txt
 │
 ├── index.html
 ├── style.css
