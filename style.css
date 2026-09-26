@@ -1,0 +1,301 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #5b4bdb, #8b5cf6);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Main Container */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    color: #5b4bdb;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+textarea,
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+/* Buttons */
+button {
+    background: #6d5ce7;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #5141c7;
+    transform: translateY(-1px);
+}
+
+/* Response Boxes */
+.response-box {
+    background: #f8f7ff;
+    border: 1px solid #e5e0ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.response-box h3 {
+    color: #5b4bdb;
+    margin-bottom: 10px;
+}
+
+.response-box p {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* Evaluation */
+#evaluationResult {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+}
+
+/* AI Response Markdown Tables */
+
+#originalResponse table,
+#improvedResponse table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    table-layout: auto;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Table headers and cells */
+#originalResponse th,
+#originalResponse td,
+#improvedResponse th,
+#improvedResponse td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    min-width: 120px;
+}
+
+/* Table header styling */
+#originalResponse th,
+#improvedResponse th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Alternate row background */
+#originalResponse tr:nth-child(even),
+#improvedResponse tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Improve text readability */
+#originalResponse td,
+#improvedResponse td {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+#originalResponse,
+#improvedResponse {
+    line-height: 1.5;
+}
+
+#originalResponse h1,
+#originalResponse h2,
+#originalResponse h3,
+#improvedResponse h1,
+#improvedResponse h2,
+#improvedResponse h3 {
+    margin: 12px 0 8px;
+}
+
+#originalResponse p,
+#improvedResponse p {
+    margin: 6px 0;
+}
+
+#originalResponse ul,
+#originalResponse ol,
+#improvedResponse ul,
+#improvedResponse ol {
+    margin: 6px 0;
+    padding-left: 20px;
+}
+
+#originalResponse li,
+#improvedResponse li {
+    margin: 4px 0;
+}
+
+#originalResponse hr,
+#improvedResponse hr {
+    margin: 12px 0;
+}
+
+#originalResponse,
+#improvedResponse {
+    line-height: 1.5;
+}
+
+#originalResponse h1,
+#originalResponse h2,
+#originalResponse h3,
+#improvedResponse h1,
+#improvedResponse h2,
+#improvedResponse h3 {
+    margin: 12px 0 8px;
+}
+
+#originalResponse p,
+#improvedResponse p {
+    margin: 6px 0;
+}
+
+#originalResponse ul,
+#originalResponse ol,
+#improvedResponse ul,
+#improvedResponse ol {
+    margin: 6px 0;
+    padding-left: 24px;
+}
+
+#originalResponse li,
+#improvedResponse li {
+    margin: 4px 0;
+}
+
+#originalResponse hr,
+#improvedResponse hr {
+    margin: 12px 0;
+}
+
+/* Fix excessive spacing inside AI-generated lists */
+
+#originalResponse li p,
+#improvedResponse li p {
+    margin: 0 !important;
+    padding: 0;
+}
+
+#originalResponse li,
+#improvedResponse li {
+    margin: 4px 0 !important;
+    padding: 0;
+}
+
+#originalResponse ul,
+#originalResponse ol,
+#improvedResponse ul,
+#improvedResponse ol {
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
+}
+
+#originalResponse ul ul,
+#originalResponse ol ol,
+#improvedResponse ul ul,
+#improvedResponse ol ol {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}

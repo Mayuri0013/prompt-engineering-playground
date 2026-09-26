@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prompt Engineering Playground</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Prompt Engineering Playground</h1>
+        <p>Explore, improve, and evaluate your AI prompts.</p>
+    </header>
+
+    <main>
+
+        <!-- Original Prompt Section -->
+        <section class="card">
+            <h2>1. Enter Your Prompt</h2>
+
+            <label for="originalPrompt">Your original prompt</label>
+
+            <textarea
+                id="originalPrompt"
+                placeholder="Example: Explain linked lists."
+            ></textarea>
+        </section>
+
+        <!-- Prompt Builder Section -->
+        <section class="card">
+            <h2>2. Improve Your Prompt</h2>
+
+            <label for="topic">Topic</label>
+            <input
+                type="text"
+                id="topic"
+                placeholder="Example: Linked Lists"
+            >
+
+            <label for="audience">Target Audience</label>
+            <select id="audience">
+                <option value="">Select audience</option>
+                <option value="beginner">Beginner</option>
+                <option value="college student">College Student</option>
+                <option value="expert">Expert</option>
+            </select>
+
+            <label for="style">Explanation Style</label>
+            <select id="style">
+                <option value="">Select style</option>
+                <option value="a real-life analogy">Real-life Analogy</option>
+                <option value="simple examples">Simple Examples</option>
+                <option value="a step-by-step explanation">Step-by-step</option>
+            </select>
+
+            <button id="generatePrompt">
+                Generate Improved Prompt
+            </button>
+
+            <label for="improvedPrompt">Improved Prompt</label>
+            <textarea
+                id="improvedPrompt"
+                placeholder="Your improved prompt will appear here..."
+                readonly
+            ></textarea>
+        </section>
+
+        <!-- AI Response Section -->
+        <section class="card">
+            <h2>3. AI Responses</h2>
+
+            <div class="response-box">
+                <h3>Original Response</h3>
+                <p id="originalResponse">
+                    Your original prompt's AI response will appear here.
+                </p>
+            </div>
+
+            <div class="response-box">
+                <h3>Improved Response</h3>
+                <p id="improvedResponse">
+                    Your improved prompt's AI response will appear here.
+                </p>
+            </div>
+
+            <button id="compareResponses">
+                Compare Responses
+            </button>
+        </section>
+
+        <!-- Evaluation Section -->
+        <!-- Evaluation Section -->
+<section class="card">
+    <h2>📊 Prompt Quality Evaluation</h2>
+
+    <p class="evaluation-note">
+        Scores are based on simple rule-based checks
+        and do not guarantee response quality.
+    </p>
+
+    <div id="evaluationResults">
+        <p>Generate responses to see the evaluation.</p>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>Prompt Engineering Playground | Mozilla Tech Club</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
